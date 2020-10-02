@@ -1,0 +1,85 @@
+.infoBox {
+    flex: 1;
+    cursor: pointer;
+    border-top: 10px solid #dddddd;
+    height: 100%;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.infoBox--cases--active {
+    border-color: #00f7ff;
+}
+.infoBox--recovered--active {
+    border-color: #33ff05;
+}
+.infoBox--deaths--active {
+    border-color: #FF6104;
+}
+.infoBox--testsPerOneMillion--active {
+    border-color: #CC1034;
+}
+.infoBox--active--active {
+    border-color: #7dd71d;
+}
+.infoBox--critical--active {
+    border-color: #fb4443;
+}
+
+.infoBox__cases--green {
+    color: lightgreen !important;
+}
+
+.infoBox__title {
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    text-align: center;
+}
+
+.infoBox__cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.infoBox__total {
+    color: #6c757d;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.MuiCardContent-root {
+    padding: 4px 16px 4px 16px !important;
+}
+
+@media (max-width: 648px) {
+    .infoBox__title {
+        font-weight: bold !important;
+        font-size: 0.5rem !important;
+        text-align: center;
+    }
+    
+    .infoBox__cases {
+        color: #cc1034;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .infoBox__total {
+        color: #6c757d;
+        font-weight: 700 !important;
+        font-size: 0.6rem !important;
+        margin-top: 15px !important;
+        border-top: 1px solid #eee;
+        text-align: center;
+    }  
+}
